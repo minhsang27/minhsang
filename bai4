@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Bàn cờ vua</title>
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .row {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <?php
+    $size = 8; // kích thước bàn cờ 8x8
+
+    for ($row = 0; $row < $size; $row++) {
+        echo '<div class="row">';
+        for ($col = 0; $col < $size; $col++) {
+            // Tổng chỉ số hàng và cột chẵn là ô trắng, lẻ là ô đen
+            if (($row + $col) % 2 == 0) {
+                echo '<div class="square white"></div>';
+            } else {
+                echo '<div class="square black"></div>';
+            }
+        }
+        echo '</div>';
+    }
+    ?>
+</body>
+</html>
+
+</body>
+</html>
