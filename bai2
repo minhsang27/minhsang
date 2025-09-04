@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mảng thành phố</title>
+    <title>Document</title>
 </head>
 <body>
     <?php
-    $c = array("Tokyo", "Mexico City", "New York City", "Mumbai", "Seoul", "Shanghai", "Lagos", "Buenos Aires", "Cairo", "London");
-    echo "<b>Danh sách ban đầu:</b><br>";
-    echo implode(" , ", $c) . "<br><br>";
-    sort($c);// sap xep mang
-    echo "<b>Danh sách sau khi sắp xếp:</b><br>";
-    echo "<ul>";
-    foreach ($c as $ct) {
-        echo "<li>$ct</li>";
+    $a=array("Tokyo", "Mexico City", "New York City", "Mumbai", "Seoul", "Shanghai", "Lagos", "Buenos Aires", "Cairo","London");
+    foreach($a as $i){
+        echo " $i, ";
+    }
+    sort($a);
+    echo "<br><ul>";
+        foreach($a as $i){
+        echo "<li>$i</li>";
     }
     echo "</ul>";
-    array_push($c, "Los Angeles", "Calcutta", "Osaka", "Beijing");//them vao mang
-    sort($c);
-
-    echo "<b>Danh sách sau khi thêm và sắp xếp lại:</b><br>";
-    echo "<ul>";
-    foreach ($c as $ct) {
-        echo "<li>$ct</li>";
+    array_push($a,"Los Angeles","Calcutta","Osaka","Beijing");
+    sort($a);
+    echo "<br><ul>";
+        foreach($a as $i){
+        echo "<li>$i</li>";
     }
-    echo "</ul>";
+    echo "</ul>";       
     ?>
 </body>
 </html>
