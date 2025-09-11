@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Nhập Thông tin Sinh Viên </h1>
+<form action="info.php"> >
+<div>
+
+ MSSV:<input type="text" name="mssv" /><br></br>
+ Họ Tên:<input type="text" name="họ tên"/><br></br>
+ Giới Tính:<input type="radio" name="gt">Nam,<input type="radio" name="gt">Nữ<br></br>
+ Ngôn Ngữ Lập Trình:<input type="checkbox" name="nnlt"> C++,<input type="checkbox" name="nnlt"> PHP<br></br>
+ Thành Phố <select name="tp">
+      <option value="">Sài Gòn</option>
+        <option value="">Long An</option>
+            <option value="">Đà Nẵng</option>
+                <option value="">Hà Nội</option>
+                    <option value="">Cần Thơ</option>
+
+
+ </select><br></br>
+ Tin Nhắn:<br>
+ <textarea name="tn" id="tn"rows="8" cols="56"></textarea><br></br>
+ <button type="submit">Gửi</button>
+
+
+</div>
+
+</form>
+
+
+</body>
+</html>
